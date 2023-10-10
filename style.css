@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Montserrat+Alternates:wght@300;400;500;600;800;900&family=Montserrat:wght@100;200;300;500;600;700&family=Quicksand:wght@600&display=swap');
+
+
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+    
+}
+.profile-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 370px;
+    width: 100%;
+    border-radius: 25px;
+    padding: 25px;
+    background-color: white;    
+    position: relative;
+    transition: 200ms;
+    box-shadow: 2px 5px 25px rgb(130, 219, 136);
+}
+.profile-card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 24px 24px 0 0;
+    height: 36%;
+    width:100%;
+    background-image: url(image.jpg);
+    background-size: 100% 100%;
+    
+}
+
+.image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    padding: 4px;
+    background-color: rgb(44, 164, 90);
+    margin-bottom: 10px;
+}
+.image .profile-image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid white;
+    
+}
+.profile-card .text-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+}
+.text-data .name{
+    font-size: 22px;
+    font-weight: 500;
+    user-select: none;
+}
+.text-data .job{
+    font-size: 15px;
+    font-weight: 400;
+    user-select: none;
+    text-align: center;
+}
+.profile-card .media-buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.media-buttons .link{
+    display: flex;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    width: 34px;
+    font-size: 19px;
+    border-radius:50% ;
+    margin: 0 8px;
+    background-color: rgb(69, 106, 228);
+    text-decoration: none;
+    transition: all 0.05s ease;
+
+}
+.profile-card .buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.buttons .button{
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    border: none;
+    border-radius: 24px;
+    margin: 0 10px;
+    padding: 8px 22px;
+    background-color: rgb(0, 174, 58);
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+.buttons .button:hover{
+    background-color: rgb(0, 174, 58);
+    box-shadow: 2px 2px 5px gray;
+    
+}
+.profile-card .analytics{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.analytics .data{
+    display: flex;
+    align-items: center;
+    color: #333;
+    padding: 0 20px;
+    border-right: 2px solid rgb(199, 199, 199);
+    user-select: none;
+}
+.data i{
+    font-size:18px;
+    margin-right: 6px;
+}
+.data:last-child{
+    border-right: none;
+}
+.link:hover{
+    font-size:23px ;
+    
+}
+.data i:hover{
+    transition: all 0.1s ease;
+    color: #4764f4;
+
+}
